@@ -13,7 +13,6 @@ function RecipeSection(props: { recipes: { title: string; description: string ; 
           <p className='text-base text-gray-500'>With our diverse collection of recipes we have something to satisfy every palate.</p>
           <div className="my-10">
             <button className='py-1.5 px-4 text-base rounded-full border border-gray-500 mx-2 opacity-50 hover:opacity-100 *:border-black focus:bg-lime-500 focus:opacity-100 focus:border-black'>ALL</button>
-            <button className='py-1.5 px-4 text-base rounded-full border border-gray-500 mx-2 opacity-50 hover:opacity-100 *:border-black focus:bg-lime-500 focus:opacity-100 focus:border-black'>VEGAN</button>
             <button className='py-1.5 px-4 text-base rounded-full border border-gray-500 mx-2 opacity-50 hover:opacity-100 *:border-black focus:bg-lime-500 focus:opacity-100 focus:border-black'>BREAKFAST</button>
             <button className='py-1.5 px-4 text-base rounded-full border border-gray-500 mx-2 opacity-50 hover:opacity-100 *:border-black focus:bg-lime-500 focus:opacity-100 focus:border-black'>LUNCH</button>
             <button className='py-1.5 px-4 text-base rounded-full border border-gray-500 mx-2 opacity-50 hover:opacity-100 *:border-black focus:bg-lime-500 focus:opacity-100 focus:border-black'>DINNER</button>

@@ -5,7 +5,7 @@ import JoinUs from '../components/JoinUs'
 
 function About() {
   return (
-    <body className='bg-orange-50'>
+    <body className='bg-main'>
       <NavBar /> 
       <div>About</div>
       <JoinUs />

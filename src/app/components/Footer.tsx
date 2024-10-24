@@ -24,12 +24,12 @@ function Footer() {
             <Link href={"/Recipes"} className="mx-4 text-white font-sans text-base font-semibold cursor-pointer hover:underline hover:text-gray-300 *:" >
               RECIPES
             </Link>
-            <Link href={"/CookingTips"} className="mx-4 text-white font-sans text-base font-semibold cursor-pointer hover:underline hover:text-gray-300 *:" >
+            {/* <Link href={"/CookingTips"} className="mx-4 text-white font-sans text-base font-semibold cursor-pointer hover:underline hover:text-gray-300 *:" >
               COOKING TIPS
-            </Link>
-            <Link href={"/About"} className="mx-4 text-white font-sans text-base font-semibold cursor-pointer hover:underline hover:text-gray-300 *:" >
+            </Link> */}
+            {/* <Link href={"/About"} className="mx-4 text-white font-sans text-base font-semibold cursor-pointer hover:underline hover:text-gray-300 *:" >
               ABOUT
-            </Link>
+            </Link> */}
           </div>
           <div  className="flex items-center justify-center ">
             <a href="https://www.tiktok.com" target='_blank'><Image src={tiktok} alt='' className='w-7 h-7 mr-4 bg-white rounded-xl ' /> </a>

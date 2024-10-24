@@ -1,16 +1,19 @@
+'use client'
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import JoinUs from '../components/JoinUs'
+import AllRecipes from './AllRecipes'
+import { recipes } from '../data/recipes'
 
 function Recipes() {
   return (
-    <body className='bg-orange-50'>
+  <div className='bg-main'>
     <NavBar />
-    <div>Recipes</div>
+    <AllRecipes recipes={recipes}/>
     <JoinUs />
     <Footer />
-  </body>
+  </div>
   )
 }
 

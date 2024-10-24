@@ -1,4 +1,4 @@
-"/use-clint/"
+"use client"
 import Footer from "./components/Footer";
 import JoinUs from "./components/JoinUs";
 import NavBar from "./components/NavBar";
@@ -9,7 +9,7 @@ import RecipeSection from "./RecipeSection";
 import { recipes } from "./data/recipes";
 function Home() {
   return (
-    <body className="bg-main">
+    <div className="bg-main">
       <NavBar /> 
       <HeroSection />
       <RecipeSection recipes={recipes} />
@@ -17,7 +17,7 @@ function Home() {
       <FeaturedSection recipes={recipes} />
       <JoinUs />
       <Footer />
-    </body>
+    </div>
   );
 }
 export default Home
