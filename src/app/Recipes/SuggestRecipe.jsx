@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import Link from "next/link"
 import Image from 'next/image';
-function SuggestRecipe(props: { recipes: { title: string; description: string ; id: number ; type: string ; recipes: string[]; time: string; instructions: string[]; difficulty: string; serve: number; image: string; } }) {
+function SuggestRecipe(props) {
   const recipe = props.recipes;
   if(recipe !== undefined){
     const image = recipe.image;

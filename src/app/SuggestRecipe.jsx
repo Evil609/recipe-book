@@ -1,13 +1,10 @@
 import React from 'react'
 import Link from "next/link"
 import Image from 'next/image';
-import { useRouter } from 'next/navigation'
-
-function SuggestRecipe(props: { recipes: { title: string; description: string ; id: number ; type: string ; recipes: string[]; time: string; instructions: string[]; difficulty: string; serve: number; image: string; } }) {
+function SuggestRecipe(props) {
   const randomNum = Math.floor(Math.random()*(29));
   const recipe = props.recipes[randomNum];
   const image = recipe.image;
-  const router = useRouter();
   return (
     <div id={recipe.id} className="bg-white rounded-3xl shadow-gray-500 shadow-sm">
       <div className="mb-6">

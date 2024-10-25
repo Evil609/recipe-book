@@ -8,7 +8,7 @@ import HeroSection from "./HeroSection";
 import RecipeSection from "./RecipeSection";
 import { recipes } from "./data/recipes";
 function Home() {
-  return (
+    return (
     <div className="bg-main">
       <NavBar /> 
       <HeroSection />

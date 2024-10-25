@@ -2,7 +2,7 @@
 import React , {useState , useEffect }from 'react'
 import FeaturedRecipe from './FeaturedRecipe'
  
-function FeaturedSection(props: { recipes: { title: string; description: string ; id: number ; type: string ; recipes: string[]; time: string; instructions: string[]; difficulty: string; serve: number; image: string; } }) {
+function FeaturedSection(props) {
   const [page , setPage ] = useState(0)
   const [prevStyle , setPrevStyle ] = useState("w-9 h-9 mx-1 rounded-full border-2 border-gray-300 text-gray-300 text-lg")
   function nextPage(){

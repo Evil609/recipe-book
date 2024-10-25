@@ -1,7 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 import SuggestRecipe from './SuggestRecipe';
-function RecipeSection(props: { recipes: { title: string; description: string ; id: number ; type: string ; recipes: string[]; time: string; instructions: string[]; difficulty: string; serve: number; image: string; } }) {
+function RecipeSection(props) {
   
   return (
 

@@ -6,8 +6,8 @@ import bagIcon from "../../home-icons/shopping-bag.png"
 import domeIcon from "../../home-icons/food.png"
 
 function DisplayedRecipes() {
-  const searcParams = useSearchParams();
-  const recipe = JSON.parse(searcParams.get("recipe"))
+  const searchParams = useSearchParams();
+  const recipe = JSON.parse(searchParams.get("recipe") )
   const ingredients = recipe.recipes
   const instructions = recipe.instructions
   return (
@@ -41,7 +41,7 @@ function DisplayedRecipes() {
                   Instructions:
                 </p>
                 <ol className='list-decimal pl-8'>
-                {instructions.map((instruction, index) =>{
+                {instructions.map((instruction, index ) =>{
                   return <li className='text-gray-600 text-xl' key={index}>{instruction}</li>
                 })}
                 </ol>
@@ -51,7 +51,7 @@ function DisplayedRecipes() {
               <div className="p-5">
                 <p className='text-red-600 font-bold'>Ingredients:</p>
                 <ul className='list-disc pl-8'>
-                  {ingredients.map((ingredient , index)=>{
+                  {ingredients.map((ingredient , index )=>{
                     return <li className=''  key={index}>{ingredient}</li>
                   })}
                 </ul>

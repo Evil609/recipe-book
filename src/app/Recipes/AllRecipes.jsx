@@ -5,10 +5,12 @@ import SuggestRecipe from './SuggestRecipe'
 function AllRecipes(props) {
   const [page , setPage] = useState(0);
   const [prevStyle , setPrevStyle ] = useState("py-1.5 px-4 mx-1 rounded-full border-2 border-gray-300 text-gray-300 text-lg")
-  const [nextStyle , setNextStyle ] = useState("py-1.5 px-4 mx-1 rounded-full border-2 border-gray-300 text-gray-300 text-lg")
+  const [nextStyle , setNextStyle ] = useState("py-1.5 px-4 mx-1 rounded-full border-2 border-gray-500 text-gray-500 text-lg hover:bg-black hover:text-white")
   function nextPage(){
-    if((page + 2) < 29){setPage(page + 9);
-    setPrevStyle("py-1.5 px-4 mx-1 rounded-full border-2 border-gray-500 text-gray-500 text-lg hover:bg-black hover:text-white")}
+    if((page + 2) < 29){
+    setPage(page + 9);
+    setPrevStyle("py-1.5 px-4 mx-1 rounded-full border-2 border-gray-500 text-gray-500 text-lg hover:bg-black hover:text-white")
+  }
   }
   function prevPage(){
     if(page !== 0){

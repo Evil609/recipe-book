@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 import Image from 'next/image';
-function FeaturedRecipe(props: { recipes: { title: string; description: string ; id: number ; type: string ; recipes: string[]; time: string; instructions: string[]; difficulty: string; serve: number; image: string; } }) {
+function FeaturedRecipe(props) {
   const recipe = props.recipes;
   const image = recipe.image;
   return (
